@@ -3,8 +3,9 @@
   "files.insertFinalNewline": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
-    "source.formatDocument": true, // this is exposed by rohit-gohri.format-code-action
-    "source.fixAll.eslint": true // this is exposed by dbaeumer.vscode-eslint
+    "source.formatDocument": true,
+    "source.fixAll.eslint": true,
+    "source.sortMembers": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
