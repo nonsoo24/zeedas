@@ -21,22 +21,24 @@
         @include box-shadow(inset 40em 0 0 0 $color-3);
     }
 
-  .timeline-event-copy {
+  .timeline-event-date {
     padding: 1em 0;
     position: relative;
     top: -0.875em;
     left: 142px;
     width: 80%;
   }
-  .timeline-event-copy:before{
-        /* background-color: #D8DAE5; */
-        content: '';
-        margin-left: -1px;
+  .timeline-event-date:before{
+        left: -144.5px;
+        content: attr(data-date);
+        text-align: right;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 21px;
         position: absolute;
-        top: 0;
-        left: 7em;
-        width: 1px;
-        height: 100%;
+        display: block;
+        top: 20px;
+        color: rgb(127, 138, 156);
     }
     h3 {
       font-size: 1.75em;
@@ -78,16 +80,16 @@
     padding: 0.25em 1em 0.2em 1em;
   }
 
-  .activity-image {
+  .timeline-event-image {
     margin-top: 20px;
   }
 
-  .activity-title {
+  .timeline-event-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
   }
-.activity-description {
+.timeline-event-description {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;

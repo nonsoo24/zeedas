@@ -6,13 +6,15 @@ import PHPIcon from "assets/images/tags/php-icon.png";
 import PythonIcon from "assets/images/tags/python-icon.png";
 import RubyIcon from "assets/images/tags/ruby-icon.png";
 import UserImage from "assets/images/user-profile.png";
+import CrownIcon from "assets/svg/CrownIcon";
+import InfoIcon from "assets/svg/InfoIcon";
 import { useMemo } from "react";
 import AppButton from "../AppButton";
 import Avatar from "../Avatar";
 import Tag from "../Tag";
 import "./UserProfile.css";
 
-const UserProfile = () => {
+const UserProfile = ({ showFollowButton = false, showRole = false }) => {
   const tagList = useMemo(
     () => [
       {
@@ -55,7 +57,7 @@ const UserProfile = () => {
         <Avatar source={UserImage} height={124} width={124} avatarClass="social_action-avatar" />
         <div>
           <AppButton text="Contact me" variant="blue" buttonClass="social_action-contact" />
-          <AppButton text="Follow" />
+          {showFollowButton && <AppButton text="Follow" />}
         </div>
       </div>
       <div className="social_info">
@@ -76,6 +78,19 @@ const UserProfile = () => {
             />
           ))}
         </div>
+        {showRole && (
+          <div className="d-flex align-items-center gap-12 justify-content-between social_info-role">
+            <CrownIcon />
+            <div>
+              <div className="d-flex align-items-center gap-5">
+                <h5>Rank</h5>
+                <InfoIcon />
+              </div>
+
+              <h6>Senior Frontend Developer</h6>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

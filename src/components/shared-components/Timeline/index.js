@@ -26,18 +26,18 @@ const Timeline = ({ items }) => {
           width={16}
           height={16}
         />
-        <div className="timeline-event-copy" data-date={date}>
+        <div className="timeline-event-date" data-date={date}>
           <Tag label={tagLabel} icon={tagIcon} tagClass={tagClass} variant={variant} />
           <img
             src={imageSource}
-            alt="text"
+            alt={title}
             width={width}
             height={height}
-            className="activity-image"
+            className="timeline-event-image"
           />
           <div>
-            <p className="activity-title">{title}</p>
-            <p className="activity-description">{description}</p>
+            <p className="timeline-event-title">{title}</p>
+            <p className="timeline-event-description">{description}</p>
           </div>
         </div>
       </li>

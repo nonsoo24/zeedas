@@ -9,8 +9,15 @@
     padding-top: 84px;
 }
 
-.wrapper-children {
-    /* margin: 0 auto; */
-    /* display: flex;
-    justify-content: center; */
+.wrapper-resume {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.wrapper-viewer-stats {
+    margin: 0 auto;
+    max-width: 814px;
+}
+.wrapper-home {
+    margin: 0 auto;
+    max-width: 640px;
 }

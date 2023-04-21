@@ -44,7 +44,7 @@
 
 .briefCase {
     background: rgba(120, 51, 234, 0.1);
-    width: 55%;
+    width: 40%;
 }
 .briefCaseIcon {
     color: #7833EA;
@@ -55,7 +55,7 @@
 }
 .turtle-green-background {
     background: rgba(66, 151, 119, 0.1);
-     width: 55%;
+    width: 35%;
 }
 
 .royal-blue {
@@ -64,7 +64,7 @@
 
 .royal-blue-background {
     background: rgba(51, 102, 255, 0.1);
-     width: 55%;
+    width: 30%;
 }
 
 .cocoa-brown {
@@ -72,9 +72,38 @@
 }
 .cocoa-brown-background{
     background: rgba(219, 104, 55, 0.1);
-     width: 55%;
+    width: 55%;
 }
 
 .node-js {
     color: #101840
 }
+
+.profile-visit {
+    background: rgba(66, 151, 119, 0.1);
+    border-radius: 6px;
+    padding: 5px 7px;
+    min-height: 0;
+    margin-top: 7.81px;
+    width: 60%
+}
+.time-spent {
+    background: rgba(241, 88, 50, 0.1);
+    border-radius: 6px;
+    padding: 5px 7px;
+    min-height: 0;
+    width: 50%;
+    margin-top: 7.81px
+}
+
+.emerald {
+    color: #429777
+}
+.red {
+    color: #F15832
+}
+
+.speed, .accuracy {
+    min-width: 40%;
+}
+
