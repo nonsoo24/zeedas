@@ -33,7 +33,7 @@ npm build
 
 ## Preview
 
-![Alt text](./src/assets/png//preview.png?raw=true "Zeedas App")
+![Alt text](./src/assets/images/preview.png?raw=true "Zeedas App")
 
 ## Tools Used
 
