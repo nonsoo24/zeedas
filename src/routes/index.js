@@ -6,7 +6,7 @@ const Routes = () => (
   <DashboardLayout>
     <RouterRoutes>
       {routes.map((route) => (
-        <Route key={route.key} path={route.path} component={route.component} />
+        <Route key={route.key} path={route.path} element={route.component} />
       ))}
     </RouterRoutes>
   </DashboardLayout>

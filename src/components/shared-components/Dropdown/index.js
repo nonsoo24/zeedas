@@ -1,7 +1,9 @@
 import HomeIcon from "assets/svg/HomeIcon";
 import StatIcon from "assets/svg/StatIcon";
 import UserIcon from "assets/svg/UserIcon";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {
+    useCallback, useEffect, useRef, useState
+} from "react";
 import { useNavigate } from "react-router-dom";
 import ROUTES from "routes/routePaths";
 import Avatar from "../Avatar";
@@ -42,15 +44,15 @@ const Dropdown = () => {
 
       {isOpen && (
         <ul className="menu-items">
-          <li className="active" onClick={() => onNavigate(ROUTES.SOCIAL)}>
+          <li className="active" onClick={() => onNavigate(ROUTES.VIEWER_STATS)}>
             <HomeIcon />
             Home
           </li>
-          <li onClick={() => onNavigate(ROUTES.ANALYTICS)}>
+          <li onClick={() => onNavigate(ROUTES.RESUME)}>
             <UserIcon />
             Resume
           </li>
-          <li onClick={() => onNavigate(ROUTES.PROFILE_ANALYTICS)}>
+          <li onClick={() => onNavigate(ROUTES.VIEWER_STATS)}>
             <StatIcon />
             Viewer Stats
           </li>
