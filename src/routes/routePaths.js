@@ -1,7 +1,7 @@
 const ROUTES = {
-  SOCIAL: "/",
-  ANALYTICS: "/Analytics",
-  PROFILE_ANALYTICS: "/ProfileAnalytics",
+  HOME: "/",
+  RESUME: "/Resume",
+  VIEWER_STATS: "/ViewerStats",
 };
 
 export default ROUTES;

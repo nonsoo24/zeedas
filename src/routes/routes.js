@@ -1,24 +1,24 @@
 import { lazy } from "react";
 import ROUTES from "./routePaths";
 
-const Social = lazy(() => import("pages/Social"));
-const ProfileAnalytics = lazy(() => import("pages/ProfileAnalytics"));
-const Analytics = lazy(() => import("pages/Analytics"));
+const Social = lazy(() => import("pages/Home"));
+const ProfileAnalytics = lazy(() => import("pages/ViewerStats"));
+const Resume = lazy(() => import("pages/Resume"));
 
 const routes = [
   {
-    key: "social",
-    path: ROUTES.SOCIAL,
+    key: "home",
+    path: ROUTES.HOME,
     component: <Social />,
   },
   {
-    key: "analytics",
-    path: ROUTES.ANALYTICS,
-    component: <Analytics />,
+    key: "resume",
+    path: ROUTES.RESUME,
+    component: <Resume />,
   },
   {
-    key: "profile-analytics",
-    path: ROUTES.PROFILE_ANALYTICS,
+    key: "viewer-stats",
+    path: ROUTES.VIEWER_STATS,
     component: <ProfileAnalytics />,
   },
 ];
