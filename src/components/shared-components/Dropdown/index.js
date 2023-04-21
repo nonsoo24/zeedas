@@ -2,11 +2,12 @@ import HomeIcon from "assets/svg/HomeIcon";
 import StatIcon from "assets/svg/StatIcon";
 import UserIcon from "assets/svg/UserIcon";
 import React, {
-    useCallback, useEffect, useRef, useState
+  useCallback, useEffect, useRef, useState
 } from "react";
 import { useNavigate } from "react-router-dom";
 import ROUTES from "routes/routePaths";
 import Avatar from "../Avatar";
+import "./Dropdown.css";
 
 const Dropdown = () => {
   const navigate = useNavigate();
@@ -25,26 +26,31 @@ const Dropdown = () => {
   const onNavigate = useCallback(
     (route) => {
       navigate(route);
+      setIsOpen(false);
     },
     [navigate],
   );
 
   useEffect(() => {
     document.addEventListener("mousedown", onClickOutside);
+    // document.addEventListener("mouseover", toggleMenu);
+    // document.addEventListener("mouseout", onClickOutside);
     return () => {
       document.removeEventListener("mousedown", onClickOutside);
+      // document.removeEventListener("mouseover", toggleMenu);
+      // document.removeEventListener("mouseout", onClickOutside);
     };
-  }, [onClickOutside]);
+  }, [onClickOutside, toggleMenu]);
 
   return (
     <div className={`menu-dropdown ${isOpen ? "open" : ""}`} ref={menuRef}>
       <button type="button" onClick={toggleMenu} className="menu-button">
-        <Avatar />
+        <Avatar avatarClass="avatar-icon" />
       </button>
 
       {isOpen && (
         <ul className="menu-items">
-          <li className="active" onClick={() => onNavigate(ROUTES.VIEWER_STATS)}>
+          <li className="active" onClick={() => onNavigate(ROUTES.HOME)}>
             <HomeIcon />
             Home
           </li>

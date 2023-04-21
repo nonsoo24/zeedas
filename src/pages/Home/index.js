@@ -7,6 +7,7 @@ import BriefCaseIcon from "assets/svg/BriefCaseIcon";
 import GithubIcon from "assets/svg/GithubIcon";
 import GraduationCap from "assets/svg/GraduationCap";
 import TrophyIcon from "assets/svg/TrophyIcon";
+import HeaderTitle from "components/shared-components/HeaderTitle";
 import Timeline from "components/shared-components/Timeline";
 import UserProfile from "components/shared-components/UserProfile.js";
 import React, { useMemo } from "react";
@@ -82,21 +83,12 @@ const Home = () => {
   );
 
   return (
-    <div className="test">
-      <div>
-        <UserProfile />
-        <section className="activity">
-          <div className="d-flex justify-content-between align-items-center">
-            <h5 className="activity-header">Activity</h5>
-            <div>
-              <select id="options">
-                <option>Show: all</option>
-              </select>
-            </div>
-          </div>
-          <Timeline items={timeLineList} />
-        </section>
-      </div>
+    <div>
+      <UserProfile showFollowButton />
+      <section className="activity">
+        <HeaderTitle title="Activity" items={[{ label: "Show: all", value: "all" }]} showDropdown />
+        <Timeline items={timeLineList} />
+      </section>
     </div>
   );
 };
