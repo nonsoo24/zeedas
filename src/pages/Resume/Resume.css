@@ -1,0 +1,18 @@
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    column-gap: 8rem;
+}
+
+.resume-card-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #696F8C;
+    margin-right: 9.33px;
+}
+
+.metrics-title {
+    font-weight: 900;
+font-size: 18px;
+color: #101840;
+}
