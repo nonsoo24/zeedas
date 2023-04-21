@@ -1,0 +1,10 @@
+.avatar {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background: rgba(16, 24, 64, 0.1);;
+    border-radius: 16px;
+    padding: 8px
+}
