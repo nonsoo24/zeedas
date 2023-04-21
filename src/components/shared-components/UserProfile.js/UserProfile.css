@@ -1,0 +1,39 @@
+.social {
+
+}
+
+.social_action {
+    display: flex;
+    justify-content: space-between;
+}
+.social_action-avatar {
+    border-radius: 62px;
+    background: none;
+
+}
+.social_info {
+margin-top: 24px;
+}
+
+.social_info-name {
+    font-weight: 900;
+    font-size: 24px;
+    color: #101840;
+}
+.social_info-bio {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #474D66;
+    margin: 8px 0 24px 0
+}
+
+.social_tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.social_action-contact {
+    color: #FFFFFF;
+}

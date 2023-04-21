@@ -1,0 +1,94 @@
+.timeline {
+    margin: 4em auto;
+    position: relative;
+    max-width: 46em;
+}
+ .timeline:before {
+      background-color: #D8DAE5;
+      content: '';
+      margin-left: 79px;
+      position: absolute;
+      top: 0;
+      left: 2em;
+      width: 1px;
+      height: 100%;
+    }
+
+  .timeline-event {
+    position: relative;
+  }
+    .timeline-event-thumbnail {
+        @include box-shadow(inset 40em 0 0 0 $color-3);
+    }
+
+  .timeline-event-copy {
+    padding: 1em 0;
+    position: relative;
+    top: -0.875em;
+    left: 142px;
+    width: 80%;
+  }
+  .timeline-event-copy:before{
+        /* background-color: #D8DAE5; */
+        content: '';
+        margin-left: -1px;
+        position: absolute;
+        top: 0;
+        left: 7em;
+        width: 1px;
+        height: 100%;
+    }
+    h3 {
+      font-size: 1.75em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      margin-bottom: 1.2em;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+   ul {
+    list-style-type: none;
+   }
+
+  .timeline-event-icon {
+    background-color: #fff;
+    outline: 10px solid #fff;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 7em;
+    width: 1em;
+    height: 1em;
+  }
+
+  .timeline-event-thumbnail {
+    @include transition(box-shadow 0.5s ease-in 0.1s);
+    color: #000;
+    font-size: 0.75em;
+    background-color: #000;
+    @include box-shadow(inset 0 0 0 0em #ef795a);
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+  }
+
+  .activity-image {
+    margin-top: 20px;
+  }
+
+  .activity-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+.activity-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}

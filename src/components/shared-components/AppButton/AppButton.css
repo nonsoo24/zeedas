@@ -1,0 +1,22 @@
+.button-wrapper {
+    padding: 13px 24px 13px 24px;
+    background: rgba(16, 24, 64, 0.05);
+    border-radius: 100px;
+    border: none;
+    color: #101840;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 2px;
+    /* transition-duration: 0.4s; */
+    cursor: pointer;
+    display: block;
+    width: 172px;
+}
+
+.blue {
+    background-color: #229BE0;
+}

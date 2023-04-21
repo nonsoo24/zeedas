@@ -1,0 +1,80 @@
+.tag {
+    padding: 8.5px 12px;
+    min-height: 37px;
+    display: flex;
+    align-items: center;
+    border-radius: 78.385px;
+}
+
+.tag-label {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 4.45px;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.pastel-orange {
+    background-color: #FF9162;
+}
+
+.aqua-green {
+    background-color: #4CE4AB;
+}
+
+.silk-blue {
+    background-color: #2C8CC2;
+}
+
+.light-turquoise {
+    background-color: #63EDF6;
+}
+
+.crystal-blue {
+    background-color: #48B4E2;
+}
+
+.coral-pink {
+    background-color: #FC8B82;
+}
+
+.briefCase {
+    background: rgba(120, 51, 234, 0.1);
+    width: 55%;
+}
+.briefCaseIcon {
+    color: #7833EA;
+    margin-left: 10px;
+}
+.turtle-green {
+    color: #429777
+}
+.turtle-green-background {
+    background: rgba(66, 151, 119, 0.1);
+     width: 55%;
+}
+
+.royal-blue {
+    color: #3366FF
+}
+
+.royal-blue-background {
+    background: rgba(51, 102, 255, 0.1);
+     width: 55%;
+}
+
+.cocoa-brown {
+    color: #DB6837
+}
+.cocoa-brown-background{
+    background: rgba(219, 104, 55, 0.1);
+     width: 55%;
+}
+
+.node-js {
+    color: #101840
+}
