@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Routes from "routes";
 
 const isLoading = () => <FullScreenSpinner isLoading />;
-window.document.title = "Zeedas App";
+
 const App = () => (
   <div className="App">
     <BrowserRouter>

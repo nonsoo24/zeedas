@@ -7,11 +7,14 @@ const DashboardLayout = (props) => {
   const location = useLocation();
   const wrapperClass = useMemo(() => {
     if (location.pathname.includes("Resume")) {
+      window.document.title = "Resume";
       return "resume";
     }
     if (location.pathname.includes("ViewerStats")) {
+      window.document.title = "Viewer Stats";
       return "viewer-stats";
     }
+    window.document.title = "Home";
     return "home";
   }, [location.pathname]);
   return (
