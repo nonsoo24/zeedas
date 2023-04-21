@@ -1,0 +1,16 @@
+.wrapper {
+    min-height: 100vh;
+    /* padding: 0 16px 100px 16px; */
+    overflow: hidden;
+    background: #fff;
+}
+
+.wrapper-content {
+    padding-top: 84px;
+}
+
+.wrapper-children {
+    /* margin: 0 auto; */
+    /* display: flex;
+    justify-content: center; */
+}
