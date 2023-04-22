@@ -13,6 +13,19 @@
 
 .metrics-title {
     font-weight: 900;
-font-size: 18px;
-color: #101840;
+    font-size: 18px;
+    color: #101840;
+}
+
+.count {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px; color: #1F242B;
+}
+
+.unit {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px; color: #1F242B;
+    color: #696F8C;
 }

@@ -16,7 +16,12 @@ const Resume = () => {
             <InfoIcon />
           </div>
         ),
-        count: "2.8c/hr",
+        appendCount: (
+          <h6 className="count">
+            2.8
+            <span className="unit">c/hr</span>
+          </h6>
+        ),
         percentageChange: "87%",
         icon: <ArrowUpIcon />,
         chartColor: "#429777",
@@ -30,7 +35,12 @@ const Resume = () => {
             <InfoIcon />
           </div>
         ),
-        count: "89%",
+        appendCount: (
+          <h6 className="count">
+            89
+            <span className="unit">%</span>
+          </h6>
+        ),
         percentageChange: "79%",
         icon: <ArrowUpIcon />,
         chartColor: "#429777",
