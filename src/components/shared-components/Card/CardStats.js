@@ -6,7 +6,9 @@ import "./Card.css";
 
 const CardStats = ({ items, cardStatWrapperStyle }) => {
   const CardStatsItem = useCallback(
-    ({ title, count, percentageChange, icon, chartColor, tagClass, variant, append     }) => (
+    ({
+ title, count, percentageChange, icon, chartColor, tagClass, variant, append 
+}) => (
       <div className="d-flex align-items-center card-analytics-item">
         <div className="card-analytics-profile">
           {append || <h6>{title}</h6>}
@@ -26,6 +28,7 @@ const CardStats = ({ items, cardStatWrapperStyle }) => {
       <div className="card-analytics-wrapper">
         {items.map((item) => (
           <CardStatsItem
+            key={item.title}
             title={item.title}
             count={item.count}
             percentageChange={item.percentageChange}

@@ -19,7 +19,7 @@ const Table = ({ data }) => {
         </thead>
         <tbody>
           {data?.map((item) => (
-            <tr key={`${item.date}-${item.timeSpent}`}>
+            <tr key={`key-${item.timeSpent}`}>
               <td className="item-wrapper">
                 <Avatar initials={item.name.substring(0, 2)} avatarClass={`initials ${item.bg}`} />
                 <div className="">
