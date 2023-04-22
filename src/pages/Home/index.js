@@ -10,10 +10,12 @@ import TrophyIcon from "assets/svg/TrophyIcon";
 import HeaderTitle from "components/shared-components/HeaderTitle";
 import Timeline from "components/shared-components/Timeline";
 import UserProfile from "components/shared-components/UserProfile.js";
+import useDocumentTitle from "hooks/useDocumentTitle";
 import React, { useMemo } from "react";
 import "./Home.css";
 
 const Home = () => {
+  useDocumentTitle("Home");
   const timeLineList = useMemo(
     () => [
       {

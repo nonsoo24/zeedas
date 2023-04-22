@@ -4,11 +4,13 @@ import Card from "components/shared-components/Card";
 import CardStats from "components/shared-components/Card/CardStats";
 import HeaderTitle from "components/shared-components/HeaderTitle";
 import Table from "components/shared-components/Table";
+import useDocumentTitle from "hooks/useDocumentTitle";
 import React, { useMemo } from "react";
 import tableData from "utils/mock-data/table";
 import "./ViewerStats.css";
 
 const ViewerStats = () => {
+  useDocumentTitle("Viewer Stats");
   const stats = useMemo(
     () => [
       {

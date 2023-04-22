@@ -3,10 +3,12 @@ import InfoIcon from "assets/svg/InfoIcon";
 import CardStats from "components/shared-components/Card/CardStats";
 import HeaderTitle from "components/shared-components/HeaderTitle";
 import UserProfile from "components/shared-components/UserProfile.js";
+import useDocumentTitle from "hooks/useDocumentTitle";
 import React, { useMemo } from "react";
 import "./Resume.css";
 
 const Resume = () => {
+  useDocumentTitle("Resume");
   const stats = useMemo(
     () => [
       {

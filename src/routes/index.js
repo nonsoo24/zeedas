@@ -11,5 +11,4 @@ const Routes = () => (
     </RouterRoutes>
   </DashboardLayout>
 );
-
 export default Routes;
