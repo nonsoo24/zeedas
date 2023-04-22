@@ -18,31 +18,31 @@ const Table = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data?.map(({ name, email, date, time, location, device, timeSpent, percentage, bg         }) => (
-            <tr key={email}>
+          {data?.map((item) => (
+            <tr key={`${item.date}-${item.timeSpent}`}>
               <td className="item-wrapper">
-                <Avatar initials={name.substring(0, 2)} avatarClass={`initials ${bg}`} />
+                <Avatar initials={item.name.substring(0, 2)} avatarClass={`initials ${item.bg}`} />
                 <div className="">
-                  <h5 className="title">{name}</h5>
-                  <p className="small-text">{email}</p>
+                  <h5 className="title">{item.name}</h5>
+                  <p className="small-text">{item.email}</p>
                 </div>
               </td>
               <td>
                 <div>
-                  <h5 className="title">{date}</h5>
-                  <p className="small-text">{time}</p>
+                  <h5 className="title">{item.date}</h5>
+                  <p className="small-text">{item.time}</p>
                 </div>
               </td>
               <td>
-                <h5 className="title">{location}</h5>
-                <p className="small-text">{device}</p>
+                <h5 className="title">{item.location}</h5>
+                <p className="small-text">{item.device}</p>
               </td>
               <td>
-                <h5 className="title">{timeSpent}</h5>
-                <p className="small-text">{`${percentage}% read`}</p>
+                <h5 className="title">{item.timeSpent}</h5>
+                <p className="small-text">{`${item.percentage}% read`}</p>
               </td>
               <td>
-                <RadialProgressBar percentage={percentage} color="#696F8C" />
+                <RadialProgressBar percentage={item.percentage} color="#696F8C" />
               </td>
               <td>
                 <ChevronDownIcon />
